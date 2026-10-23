@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kliping Karakter Klasik</title>
+    <style>
+        /* Pengaturan Dasar Halaman */
+        body {
+            background-color: #f4efe2; /* Warna latar krem kertas lama */
+            font-family: 'Georgia', 'Times New Roman', serif; /* Font bergaya klasik */
+            color: #2c2519; /* Warna teks cokelat tua gelap */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Bingkai Foto Klasik (Nomor 2) */
+        .classic-frame {
+            background-color: #faf6eb; /* Warna kertas di dalam bingkai */
+            border: 4px double #5c4a37; /* Border ganda khas gaya klasik */
+            padding: 20px;
+            max-width: 400px;
+            box-shadow: 5px 5px 15px rgba(44, 37, 25, 0.15); /* Bayangan lembut */
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        /* Efek sedikit terangkat saat pointer mouse lewat */
+        .classic-frame:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Kontainer untuk Gambar / Foto */
+        .photo-container {
+            width: 100%;
+            height: 380px; /* Menentukan tinggi area foto */
+            border: 1px solid #c2b59b;
+            overflow: hidden;
+            
+            /* Menggunakan Link Gambar kamu sebagai Background (Sesuai Cara Nomor 2) */
+            background-image: url('https://termai.cc');
+            background-size: cover;
+            background-position: center;
+            
+            /* Efek hitam putih klasik (sepia tipis) */
+            filter: sepia(20%) contrast(105%); 
+        }
+
+        /* Bagian Teks di Bawah Foto */
+        .photo-caption {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px dashed #c2b59b; /* Garis putus-putus pembatas teks */
+        }
+
+        .photo-title {
+            font-size: 22px;
+            font-weight: bold;
+            font-style: italic;
+            margin: 0 0 5px 0;
+            letter-spacing: 1px;
+        }
+
+        .photo-desc {
+            font-size: 14px;
+            color: #6e5d47;
+            margin: 0;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Komponen Bingkai Foto Klasik -->
+    <div class="classic-frame">
+        <!-- Area gambar yang diambil langsung dari link URL -->
+        <div class="photo-container"></div>
+        
+        <!-- Keterangan teks di bawah foto -->
+        <div class="photo-caption">
+            <h2 class="photo-title">Goo Yoon-won</h2>
+            <p class="photo-desc">Monday's Savior — Ilustrasi karakter dengan nuansa estetika klasik dan palet warna retro yang hangat.</p>
+        </div>
+    </div>
+
+</body>
+</html>
